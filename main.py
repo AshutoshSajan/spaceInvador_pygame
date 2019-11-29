@@ -12,7 +12,7 @@ pygame.init()
 screen = pygame.display.set_mode((1200, 800))
 
 # background image
-background = pygame.image.load("background.png")
+# background = pygame.image.load("space.jpg")
 
 # background sound
 mixer.music.load("background.wav");
@@ -49,7 +49,7 @@ for i in range(number_of_enemies):
 # bullet
 bulletImg = pygame.image.load("bullet.png")
 bulletX = 0
-bulletY = 700
+bulletY = playerY
 bulletX_change = 0
 bulletY_change = 4
 
@@ -104,7 +104,7 @@ while running:
 	screen.fill((0,0,0))
 
 	# background image
-	screen.blit(background, (0, 0))
+	# screen.blit(background, (0, 0))
 
 	for event in pygame.event.get():
 		# print(event)
